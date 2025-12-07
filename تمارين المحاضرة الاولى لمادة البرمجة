@@ -1,0 +1,247 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/atroug/analysis/blob/main/%D8%AA%D9%85%D8%A7%D8%B1%D9%8A%D9%86%20%D8%A7%D9%84%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A9%20%D8%A7%D9%84%D8%A7%D9%88%D9%84%D9%89%20%D9%84%D9%85%D8%A7%D8%AF%D8%A9%20%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "id": "_hi0nbdD-A0Q"
+      },
+      "outputs": [],
+      "source": [
+        "import pandas as pd\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np"
+      ],
+      "metadata": {
+        "id": "57_LOGGQdal1"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "القوائم list"
+      ],
+      "metadata": {
+        "id": "4Hlyb1khydzN"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "names=[\"ali\",\"ahmed\"]"
+      ],
+      "metadata": {
+        "id": "26NvGpt_xzKf"
+      },
+      "execution_count": 7,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(names))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "boC99cuEymL_",
+        "outputId": "9cfa6fc2-ce81-4de2-e2eb-73c965afd00f"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'list'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age=[35,45]"
+      ],
+      "metadata": {
+        "id": "tfjlkAWwya_6"
+      },
+      "execution_count": 9,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(age))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2D7vYCu61Qyd",
+        "outputId": "d7339c0a-d6b0-45c2-f553-407253abfc58"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'list'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "diction **القاموس**"
+      ],
+      "metadata": {
+        "id": "qAUXE_3e9tsW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "user={\"names\":\"ali\",\"age\":\"35\"}"
+      ],
+      "metadata": {
+        "id": "N4kOj3Xq1vOH"
+      },
+      "execution_count": 11,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(type(user))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KIpXzkjg4XFI",
+        "outputId": "3af9e9d5-e50c-4d29-c173-1c6ff6e69c09"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'dict'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A=[[1,2,3],[4,5,6]]"
+      ],
+      "metadata": {
+        "id": "y9POcovWT75x"
+      },
+      "execution_count": 15,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "14525d46",
+        "outputId": "c5705728-0785-4eb0-c287-371a34a8e62d"
+      },
+      "source": [
+        "import numpy as np\n",
+        "A = np.array(A)\n",
+        "print(A)"
+      ],
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2 3]\n",
+            " [4 5 6]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "A=[[1,2,3],[4,5,6],[7,8,9]]"
+      ],
+      "metadata": {
+        "id": "z1teTtQGVrvn"
+      },
+      "execution_count": 18,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "A=np.array(A)\n",
+        "print(A)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5Y-HJIfPWN_k",
+        "outputId": "95e6bc53-17f9-420a-8529-336b9936ecd7"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2 3]\n",
+            " [4 5 6]\n",
+            " [7 8 9]]\n"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN2ob05QbUPFvueuDftR3y3",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
